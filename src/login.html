@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+</head>
+
+<body class="text-white" >
+    <div class="flex items-center justify-center h-screen bg-no-repeat bg-cover"
+        style="background-image: url(assets/photo-1535850452425-140ee4a8dbae.avif);">
+
+        <div class="backdrop-blur p-8 rounded-lg shadow-lg w-full max-w-sm">
+
+            <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+
+            <form class="space-y-4">
+                <div>
+                    <label class="block">Email</label>
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        id="l-email">
+                </div>
+
+                <div>
+                    <label class="block">Password</label>
+                    <input type="password" placeholder="Enter your password"
+                        class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        id="l-password">
+                </div>
+
+                <button id="l-btn" type="button"
+                    class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition-colors">
+                    Login
+                </button>
+            </form </div>
+
+        </div>
+</body>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
