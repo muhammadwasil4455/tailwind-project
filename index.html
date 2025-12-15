@@ -2,249 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
 </head>
 
-<body>
+<body class="text-white" >
 
 
-    <nav class="bg-black border-b border-gray-800 sticky top-0">
-        <div class="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 text-2xl font-bold text-yellow-500">
-                    LuxuryEat
+    <div
+        class="flex justify-center items-center w-full h-screen bg-no-repeat bg-center bg-cover bg-[url('assets/photo-1484659619207-9165d119dafe.avif')] ">
+
+        <div class="backdrop-blur-lg p-8 rounded-lg shadow-lg w-full max-w-sm backdrop:blur-lg bg shadow-lg">
+
+            <h2 class="text-2xl font-bold mb-6 text-center">Sighnup</h2>
+
+            <form class="space-y-4">
+                <div>
+                    <label class="block ">Username</label>
+                    <input type="text" placeholder="Enter Username"
+                        class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2  border-white "
+                        id="s-name">
+                </div>
+                <div>
+                    <label class="block">Email</label>
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2  border-white "
+                        id="s-email">
                 </div>
 
-                <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-300 hover:text-yellow-500">Home</a>
-                    <a href="#menu" class="text-gray-300 hover:text-yellow-500">Menu</a>
-                    <a href="#" class="text-gray-300 hover:text-yellow-500">About</a>
-                    <a href="#contact" class="text-gray-300 hover:text-yellow-500">Contact</a>
+                <div>
+                    <label class="block">Password</label>
+                    <input type="password" placeholder="Enter your password"
+                        class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2  border-white "
+                        id="s-password">
                 </div>
 
-                <button id="menuBtn" class="md:hidden text-yellow-500 text-3xl">
-                    ☰
+                <button id="s-btn" type="button"
+                    class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition-colors">
+                    Submit
                 </button>
-            </div>
-        </div>
-
-        <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-black border-t border-gray-800">
-            <a href="#" class="block text-gray-300 hover:text-yellow-500">Home</a>
-            <a href="#menu" class="block text-gray-300 hover:text-yellow-500">Menu</a>
-            <a href="#" class="block text-gray-300 hover:text-yellow-500">About</a>
-            <a href="#contact" class="block text-gray-300 hover:text-yellow-500">Contact</a>
-        </div>
-    </nav>
-    <section
-        class="h-screen bg-center bg-cover bg-[url('assets/premium_photo-1661883237884-263e8de8869b.avif')] bg-no-repeat ">
-        <div class="h-screen w-[100%] bg-[rgba(0,0,0,0.5)]">
-            <div
-                class="h-screen flex justify-center text-2xl md:text-5xl font-extrabold text-white leading-14 flex-col px-15 ">
-                <h2>Made by Pakistanis.</h2>
-                <h2>Enjoyed by Everyone.</h2>
-            </div>
-        </div>
-    </section>
-
-    <div class="max-w-[1920px] bg-[#cfd2c7] p-[30px]">
-        <div class="flex bg-green flex-col md:flex-row">
-            <div class="basis-[60%]">
-                <h2 class="font-bold text-4xl ms-[20px] ">Who are we?</h2>
-            </div>
-            <div class=" basis-[40%] p-[20px]  text-[13px]">
-                <p class="leading-4.5 text-[16px] ">Vulputate in elit tincidunt elit scelerisque massa fusce pharetra.
-                    Sagittis
-                    gravida lacus quisque dictum non pretium suspendisse porttitor. Risus adipiscing semper ornare
-                    velit. Sagittis consequat luctus leo arcu. Aenean nunc accumsan id maecenas. Tortor.</p>
-            </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-4  mt-5 p-[20px] mt-[50px] ">
-            <img src="assets/item1.jpg" alt="" class="w-full h-48 object-cover">
-            <img src="assets/item2.jpg" alt="" class="w-full h-48 object-cover">
-            <img src="assets/item3.png" alt="" class="w-full h-48 object-cover">
-            <img src="assets/item4.png" alt="" class="w-full h-48 object-cover">
-            <img src="assets/item5.png" alt="" class="w-full h-48 object-cover">
-        </div>
-
-
-    </div>
-
-
-
-
-    <div class="max-w-[1920px] bg-[#cfd2c7] mx-auto p-5" id="menu">
-        <div class="text-center">
-            <h2 class="text-4xl font-extrabold mb-4">Menu</h2>
-            <p class="mx-auto max-w-[500px] my-7 ">
-                Lacus lobortis nullam nam consectetur fermentum mattis pellentesque id nulla. Risus convallis iaculis
-                risus ac aliquam sit ultricies. Adipiscing adipiscing pellentesque tincidunt vitae. Aliquam dolor
-                egestas nam congue elit dolor.
-            </p>
-        </div>
-        <div class="flex flex-wrap justify-center items-center gap-[50px] mb-[25px]">
-            <button data-category="biryani"
-                class="border px-4 py-2 rounded-2xl border-black hover:bg-gray-500">Biryani</button>
-            <button data-category="chapli-kabab"
-                class="border px-4 py-2 rounded-2xl border-black hover:bg-gray-500">Chapli-Kabab</button>
-            <button data-category="dessert"
-                class="border px-4 py-2 rounded-2xl border-black hover:bg-gray-500">Desserts</button>
-            <button data-category="juices"
-                class="border px-4 py-2 rounded-2xl border-black hover:bg-gray-500">Juices</button>
-            <button data-category="butter-chicken"
-                class="border px-4 py-2 rounded-2xl border-black hover:bg-gray-500">Butter-Chicken</button>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-[10px] text-center">
-            <div class="border-2 border-black rounded-2xl p-4 hover:scale-105 duration-500"
-                data-category="chapli-kabab">
-                <img class="rounded-2xl w-[300px] h-[230px]" src="assets/Chapli-Kabab-Recipe.jpg" alt="">
-                <h2 class="text-2xl font-bold mt-5">Chapli Kabab</h2>
-            </div>
-            <div class="border-2 border-black rounded-2xl p-4 hover:scale-105 duration-500"
-                data-category="butter-chicken">
-                <img class="rounded-2xl w-[300px] h-[230px]" src="assets/butter-chicken-handi-recipe-main-photo.jpg"
-                    alt="">
-                <h2 class="text-2xl font-bold mt-5">Butter chicken-handi</h2>
-            </div>
-            <div class="border-2 border-black rounded-2xl p-4 hover:scale-105 duration-500" data-category="dessert">
-                <img class="rounded-2xl w-[300px] h-[230px]"
-                    src="assets/Forticreme-Chocolate-Chocolate-Layered-Dessert-1-scaled.jpeg" alt="">
-                <h2 class="text-2xl font-bold mt-5">Choclate ice-cream</h2>
-            </div>
-            <div class="border-2 border-black rounded-2xl p-4 hover:scale-105 duration-500" data-category="juices">
-                <img class="rounded-2xl w-[300px] h-[230px]" src="assets/download.jpg" alt="">
-                <h2 class="text-2xl font-bold mt-5">Juices</h2>
-            </div>
-            <div class="border-2 border-black rounded-2xl p-4 hover:scale-105 duration-500" data-category="biryani">
-                <img class="rounded-2xl w-[300px] h-[230px]" src="assets/1200px-Hyderabadi_Chicken_Biryani.jpg" alt="">
-                <h2 class="text-2xl font-bold mt-5">Biryani</h2>
-            </div>
-        </div>
-
-
-        <div class="flex md:flex-row flex-col justify-around p-6">
-
-            <div class="basis-[40%] order-2 md:order-1">
-                <img class="w-[400px]" src="assets/menu-photo.png" alt="">
-                <h1 class="font-bold mt-2">Midnight Craze</h1>
-                <h2>$8</h2>
-                <p>2 oz silver tequila, 1 oz cointreau, 1 oz lime juice, salt for the rim</p>
-            </div>
-
-            <div
-                class="basis-[50%] order-1 md:order-2 md:text-start text-center flex flex-col gap-y-13 my-6 justify-center">
-                <h1 class="text-5xl font-bold text-[#9FA68C]">Wine</h1>
-                <h1 class="text-5xl font-bold text-[#36392D]">Cocktails</h1>
-                <h1 class="text-5xl font-bold text-[#9FA68C]">Beer</h1>
-            </div>
-
+            </form>
         </div>
 
     </div>
-
-    <div class="max-w-[1920px] p-[50px] bg-[#b7bca8] ">
-        <div class="flex bg-green flex-col md:flex-row">
-            <div class="basis-[50%]">
-                <h2 class="font-bold text-4xl ms-[20px] ">Our team<h2>
-            </div>
-            <div class=" basis-[35%] p-[20px] text-[13px]">
-                <p class="text-[12px]"> In velit auctor non auctor in. Id pellentesque facilisis at lectus sed in sit
-                    tellus mauris..</p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-[80px]">
-            <div class="text-center">
-                <img width="280px" src="assets/team-photo.png" alt="">
-                <h2 class="font-bold mt-1 ">Johnathan Demario</h2>
-                <h3 class="font-semibold">Founder</h3>
-                <p class="text-[14px]">In velit auctor non auctor in. Id pellentesque facilisis at lectus sed in sit
-                    tellus mauris.</p>
-            </div>
-
-            <div class="text-center">
-                <img width="280px" src="assets/team-photo (1).png" alt="">
-                <h2 class="font-bold mt-1">Bryan Machado</h2>
-                <h3 class="font-semibold">Chef</h3>
-                <p class="text-[14px]">Duis sed ut dolor viverra porttitor semper et faucibus facilisis. Hac maecenas
-                    rhoncus.</p>
-            </div>
-            <div class="text-center">
-                <img width="280px" src="assets/team-photo (2).png" alt="">
-                <h2 class="font-bold mt-1">Adam Joseph</h2>
-                <h3 class="font-semibold">Chef</h3>
-                <p class="text-[14px]">Faucibus sed vitae dui justo duis in. Egestas ipsum ut a elementum at laoreet at
-                    quam vitae.</p>
-            </div>
-            <div class="text-center">
-                <img width="280px" src="assets/team-photo (3).png" alt="">
-                <h2 class="font-bold mt-1">Putin Desque</h2>
-                <h3 class="font-semibold">Chef</h3>
-                <p class="text-[14px]">Molestie viverra mattis nisl vitae orci feugiat in. Aliquet quis orci turpis
-                    aliquet..</p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="max-w-[1920px] bg-[#cfd2c7]">
-        <h2 class="p-[55px] text-5xl font-bold">Events</h2>
-        <div class="grid grid-cols-2 mx-[50px] gap-5">
-            <img src="assets/Event-items.png" alt="">
-            <img src="assets/Event-items (1).png" alt="">
-        </div>
-
-        <div class="grid grid-cols-2 mx-[50px] py-10 gap-5">
-            <img src="assets/Event-items (2).png" alt="">
-            <img src="assets/Event-items (3).png" alt="">
-        </div>
-    </div>
-
-    <div class="max-w-[1920px] bg-[#b7bca8] py-7" id="contact">
-        <div class="grid grid-cols-1 md:grid-cols-3 p-[25px]   ">
-            <div>
-                <ul class="flex justify-center gap-5">
-                    <li>Menu</li>
-                    <li>Team</li>
-                    <li>Events</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-
-            <div class=" text-center md:my-0  my-5 ">
-                <h2 class="text-3xl font-bold italic">Cibo gustoso</h2>
-                <div class="flex justify-center items-center gap-3 md:gap-6 mt-8 ">
-                    <a href=""><i class="fa-brands fa-facebook fa-2xl "></i></a>
-                    <a href=""><i class="fa-brands fa-instagram fa-2x "></i></a>
-                    <a href=""><i class="fa-brands fa-twitter fa-2xl "></i></a>
-                    <a href=""><i class="fa-brands fa-youtube fa-2xl "></i></a>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <label>
-                    <h2 class="text-[14px]">Sign up to our newsletter</h2>
-                    <input class="border-b-1 text-center outline-0" type="email" placeholder="Email">
-                </label>
-
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-
-
-
 
 </body>
-
 <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </html>
