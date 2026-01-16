@@ -78,7 +78,7 @@ if (loginBtn) {
                 confirmButtonText: "Go to Dashboard",
                 confirmButtonColor: "#2563eb"
             }).then(() => {
-                location.href = "index.html";
+                location.href = "dashboard.html";
             });
         } else {
             Swal.fire({
@@ -106,7 +106,6 @@ const menuItems = document.querySelectorAll('.grid > div');
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const category = button.dataset.category.toLowerCase();
-
         menuItems.forEach(item => {
             if (item.dataset.category === category) {
                 item.classList.remove('hidden');
